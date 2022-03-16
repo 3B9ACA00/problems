@@ -2,7 +2,7 @@ package com.leetcode.problem_9;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("problem 2:");
+        System.out.println("problem 9:");
         int number = 1034554301;
         Solution sol = new Solution();
         boolean result = sol.isPalindrome(number);
@@ -20,6 +20,7 @@ class Solution {
 }
 */
 
+/*
 class Solution {
     public boolean isPalindrome(int x) {
         int originalNumber = x;
@@ -32,5 +33,20 @@ class Solution {
         }
 
         return originalNumber == reversedNumber;
+    }
+}
+*/
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int reversedNumber = 0;
+        while (x > reversedNumber) {
+            reversedNumber = reversedNumber * 10 + x % 10;
+            x /= 10;
+        }
+        return x == reversedNumber || x == reversedNumber / 10;
     }
 }
