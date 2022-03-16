@@ -30,18 +30,16 @@ class Solution {
                     nextCh = s.charAt(i + 1);
                     if (nextCh != 'I') {
                         nextPos = new String(charArr).indexOf(nextCh);
-                        result += values[nextPos] - values[pos];
-                        i++;
-                        continue;
+                        if (values[nextPos] > values[pos]) {
+                            result += values[nextPos] - values[pos];
+                            i++;
+                            continue;
+                        }
                     }
                 }
             }
 
             result += values[pos];
-
-            System.out.print(ch);
-            System.out.print(" - ");
-            System.out.println(result);
         }
 
         return result;
