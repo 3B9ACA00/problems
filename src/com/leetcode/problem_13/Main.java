@@ -10,6 +10,7 @@ public class Main {
         System.out.println(sol.romanToInt("MCMXCIV"));
         System.out.println(sol.romanToInt("DCXXI"));
         System.out.println(sol.romanToInt("IV"));
+        System.out.println(sol.romanToInt("MC"));
     }
 }
 
