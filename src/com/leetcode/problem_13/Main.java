@@ -14,7 +14,6 @@ public class Main {
 
 // Todo hashMap
 // Todo make readable
-// check solutions
 
 class Solution {
     public int romanToInt(String s) {
