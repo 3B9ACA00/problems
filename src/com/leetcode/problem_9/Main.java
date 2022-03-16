@@ -3,10 +3,16 @@ package com.leetcode.problem_9;
 public class Main {
     public static void main(String[] args) {
         System.out.println("problem 9:");
-        int number = 1034554301;
+
         Solution sol = new Solution();
-        boolean result = sol.isPalindrome(number);
-        System.out.println(result);
+        System.out.println(sol.isPalindrome(12321));
+        System.out.println(sol.isPalindrome(123451));
+        System.out.println(sol.isPalindrome(0));
+        System.out.println(sol.isPalindrome(10));
+        System.out.println(sol.isPalindrome(101));
+        System.out.println(sol.isPalindrome(1010));
+        System.out.println(sol.isPalindrome(-1));
+        System.out.println(sol.isPalindrome(10000001));
     }
 }
 
