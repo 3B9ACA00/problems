@@ -13,22 +13,22 @@ public class Main {
 class Solution {
     public int lengthOfLongestSubstring(String s) {
 
-//        int from = 0;
-//        int to = 0;
-//
-//        int tempFrom = 0;
-//        int tempTo = 0;
-//
-//        char ch;
-//
-//        for (int i = 0; i < s.length(); i++) {
-//            ch = s.charAt(i);
-//            for (int j = 0; j < i; j++) {
-//                if (s.charAt(j) == ch) {
-//
-//                }
-//            }
-//        }
+        int from = 0;
+        int to = 0;
+
+        int tempFrom = 0;
+        int tempTo = 0;
+
+        char ch;
+
+        for (int i = 0; i < s.length(); i++) {
+            ch = s.charAt(i);
+            for (int j = 0; j < i; j++) {
+                if (s.charAt(j) == ch) {
+
+                }
+            }
+        }
         return 0;
     }
 }
